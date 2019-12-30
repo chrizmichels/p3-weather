@@ -13,7 +13,8 @@ The started project has been extended by "Country Code" in `website/index.html`.
 ## Installation
 
 In order to run the project:
-1.) Download zip file or Clone Repo
-2.) Open your Terminal and `cd` to your local copy of the repo
-3.) Run nmp install
-4.) Run npm start
+
+1. Download zip file or Clone Repo
+2. Open your Terminal and `cd` to your local copy of the repo
+3. Run nmp install
+4. Run npm start
