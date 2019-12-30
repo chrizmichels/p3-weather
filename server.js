@@ -30,7 +30,6 @@ const server = app.listen(port, listening);
 
 // Initialize all route with a callback function
 function listening() {
-  // console.log(server);
   console.log(`running on localhost: ${port}`);
 }
 
@@ -47,14 +46,10 @@ app.post("/all", (req, res) => {
 
   console.log("Server Post Route - data: ", data);
   console.log("Server Post Route - ProjectData: ", projectData);
-
-  // console.log(projectData.answer);
 });
 
 // Callback function to complete GET '/all'
 app.get("/all", (req, res) => {
-  // res.send(projectData);
-  // res.send("Get /all Data Endpoint");
   console.log("Server side GET");
   console.log(projectData);
   res.send(projectData);

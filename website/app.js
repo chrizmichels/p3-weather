@@ -9,8 +9,6 @@ let newDate = `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()} `;
 
 // Personal API Key for OpenWeatherMap API
 const apiKey = `42b8991393801a8662037ddb8fbd3c5f`;
-// const locationID = `2950061`;
-// const countryCode = "ch";
 const unit = `metric`;
 
 // Event listener to add function to existing HTML DOM element
@@ -65,10 +63,6 @@ const postData = async (url = "", data = {}) => {
   console.log(`CALLED -> postData on URL: ${url}`);
   console.log(`With Data Object -> `, data);
 
-  //   let jsData = await data.json();
-
-  //   console.log(jsData);
-
   const response = await fetch(url, {
     method: "POST",
     credentials: "same-origin",
@@ -77,7 +71,6 @@ const postData = async (url = "", data = {}) => {
     },
     // Body data type must match "Content-Type" header
     body: JSON.stringify(data)
-    // body: JSON.stringify(jsData)
   });
 
   try {
